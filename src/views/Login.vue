@@ -4,25 +4,27 @@
       <div class="content-left"></div>
       <div class="content-right">
         <div class="login-form">
-          <div class="title">中天规则引擎</div>
-          <a-form-model ref="form" :model="form" class="user-layout-login">
-            <a-form-item label="" class="ant-input-wrapper">
-              <a-input
-                v-model="form.username"
-                class="login-input"
-                placeholder="请输入账号"
-              />
+          <div class="title">规则引擎</div>
+          <a-form-model ref="form"
+                        :model="form"
+                        class="user-layout-login">
+            <a-form-item label=""
+                         class="ant-input-wrapper">
+              <a-input v-model="form.username"
+                       class="login-input"
+                       placeholder="请输入账号" />
             </a-form-item>
-            <a-form-item label="" class="ant-input-wrapper">
-              <a-input
-                v-model="form.password"
-                class="login-input"
-                placeholder="请输入密码"
-                type="password"
-              />
+            <a-form-item label=""
+                         class="ant-input-wrapper">
+              <a-input v-model="form.password"
+                       class="login-input"
+                       placeholder="请输入密码"
+                       type="password" />
             </a-form-item>
             <a-form-item size="large">
-              <a-button type="primary" @click="login" class="login-button">
+              <a-button type="primary"
+                        @click="login"
+                        class="login-button">
                 登录
               </a-button>
             </a-form-item>

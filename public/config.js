@@ -10,6 +10,6 @@ window.$rule = {
 }
 // 版本已经应用名称
 window.APP_VERSION = '2.1.2'
-window.APP_NAME = '中天规则引擎'
+window.APP_NAME = '规则引擎'
 
 document.title = window.APP_NAME + ' - V' + window.APP_VERSION

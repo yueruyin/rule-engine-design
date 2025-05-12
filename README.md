@@ -1,7 +1,10 @@
 # rule-engine-design
 
-基于 Ant Design Vue 的规则引擎设计器
+基于 AntDesign Vue 的规则引擎设计器
 
+![登录页面](images/01_rule_img.png)
+![规则列表页面](images/02_rule_img.png)
+![规则设计页面](images/03_rule_img.png)
 # 开发环境配置
 
 node 14.x
@@ -29,27 +32,6 @@ npm run serve
 | ------------------ | ------------------ | ------------------ |
 | rule-engine-design | rule-engine-design | 规则引擎设计器项目 |
 
-# 接口文档
-
-[《纵横前端框架开发指南》](https://www.yuque.com/docs/share/84b16624-b31f-4231-80ca-f52bae6bec04)
-
-[《前端基础组件使用》](https://www.yuque.com/docs/share/2773455b-901f-4105-bac9-6f5da669ec38)
-
-[《前端通用工具类插件包》](https://www.yuque.com/docs/share/64a9e200-bff2-4667-8a15-3ba52c6b3360)
-
-# 发版
-
-```powershell
-# 开发电脑首次发版须登录 Nexus 私服
-# 执行命令，输入账号密码登录 Nexus 私服
-npm run login
-
-# 发版正式版（发版前须先升级 package.json 中的版本号）
-npm run pub
-
-# 发版 beta 版（发版前须先升级 package.json 中的版本号）
-npm run pub:beta
-```
 
 # 目录结构
 
