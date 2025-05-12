@@ -1,0 +1,61 @@
+// ========================================================
+// 功能面板黑色样式
+// @author wangyb
+// @createTime 2023-05-25 10:53:55
+// ========================================================
+
+.rule-design-panel-tabs {
+  .ant-tabs-card-bar {
+    &.ant-tabs-top-bar,
+    &.ant-tabs-bottom-bar,
+    &.ant-tabs-left-bar,
+    &.ant-tabs-right-bar {
+      .ant-tabs-tab {
+        background-color: #212121;
+        border-color: #212121;
+        color: #afafaf;
+      }
+
+      .ant-tabs-tab-active,
+      .ant-tabs-tab:hover {
+        background-color: #2c2c2c;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .ant-tabs-bar,
+  .ant-tabs-left-content {
+    border-color: #080808;
+
+    &.ant-tabs-top-bar {
+      border-bottom-color: #080808;
+    }
+  }
+
+  &.ant-tabs-vertical {
+    &.ant-tabs-card {
+      .ant-tabs-card-bar {
+        &.ant-tabs-left-bar,
+        &.ant-tabs-right-bar {
+          .ant-tabs-tab {
+            border-color: #080808;
+          }
+        }
+      }
+    }
+  }
+}
+
+.rule-design-panel {
+  // background-color: #2c2c2c;
+  background-color: #212121;
+}
+
+.rule-design-panel--left-border {
+  border-left-color: #080808;
+}
+
+.rule-design-panel--right-border {
+  border-right-color: #080808;
+}

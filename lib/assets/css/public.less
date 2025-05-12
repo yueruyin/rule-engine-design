@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.full-w {
+  width: 100%;
+}
+
+.full-h {
+  height: 100%;
+}
+
+/* flex布局 */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-center-j {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 鼠标形状 */
+
+.pointer {
+  cursor: pointer;
+}
+
+/* 超出省略 */
+
+.noh {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 三行省略 */
+
+.noh3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* 两行省略 */
+
+.noh2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-b-50 {
+  padding-bottom: 50px;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.m-l-5 {
+  margin-left: 5px;
+}
+.m-l-10 {
+  margin-left: 10px;
+}
+.m-l-20 {
+  margin-left: 20px;
+}
+.m-r-5 {
+  margin-right: 5px;
+}
+.m-r-10 {
+  margin-right: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.of-h {
+  overflow: hidden;
+}
+.of-v {
+  overflow: visible;
+}
+
+.min-h-200 {
+  min-height: 200px;
+}
+
+.v-a-1 {
+  vertical-align: 1px;
+}
+
+.float-r {
+  float: right;
+}
+
+.float-l {
+  float: left;
+}
+
+.float-clear::after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+/* 鼠标样式 */
+.pointer {
+  cursor: pointer;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  display: block;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #696969;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #696969;
+}
+::-webkit-scrollbar-corner {
+  background: #4a4a4a;
+}
+
+.inline-input-wrapper {
+  display: inline-flex;
+  width: 200px;
+  line-height: 40px;
+  border: 1px solid #afafaf;
+}
+
+.inline-input-wrapper--small {
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.inline-input-label {
+  padding: 0 10px;
+}
+
+.inline-input {
+  flex: 1;
+  border: 0;
+
+  &.ant-select .ant-select-selection {
+    border-width: 0 !important;
+  }
+}

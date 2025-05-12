@@ -1,0 +1,67 @@
+// ========================================================
+// 设计器功能按钮样式
+// @author wangyb
+// @createTime 2023-05-26 10:27:54
+// ========================================================
+
+.rule-design-btn {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #efefef;
+  }
+}
+
+.rule-design-btn--icon {
+  font-size: 20px;
+  padding-top: 2px;
+}
+
+.rule-design-btn.rule-design-btn--disabled {
+  cursor: default;
+
+  .rule-design-btn--icon {
+    color: #afafaf;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.rule-design-btn--image {
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.rule-design-btn--shape {
+  padding: 0 3px;
+
+  .shape {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 1px;
+    background: #afafaf;
+    vertical-align: middle;
+  }
+}
+
+.rule-design-button-group {
+  padding: 0 10px;
+
+  +.rule-design-button-group {
+    border-left: 1.5px solid #efefef
+  }
+}

@@ -1,0 +1,249 @@
+// ========================================================
+// 黑色皮肤的样式，用来覆盖组件的样式
+// @author wangyb
+// @createTime 2023-05-24 14:02:12
+// ========================================================
+
+@import url('./theme/dark/design.less');
+@import url('./theme/dark/rule-panels.less');
+@import url('./theme/dark/rule-buttons.less');
+
+.rule-design-dialog--dark {
+  .v-dialog {
+    background: #212121;
+  }
+  .v-dialog__header {
+    background: #ffffff;
+    color: #424242;
+
+    .anticon-close {
+      color: #424242;
+    }
+  }
+  .v-dialog__body {
+    background: #212121;
+    color: #ffffff;
+  }
+
+  .v-dialog__footer {
+    background: #212121;
+    border-top: 1px solid #595959;
+  }
+
+  .condition-item .single-condition-entry {
+    border: 1px solid #595959;
+  }
+}
+
+.ant-select-dropdown--dark {
+  background: #2f2f2f;
+  border-color: #2f2f2f;
+}
+
+.hint-popover--dark {
+  &.ant-popover {
+    background: #212121;
+    color: #ffffff;
+  }
+  .ant-popover-inner {
+    background: #212121;
+    color: #ffffff;
+  }
+  .ant-popover-title {
+    color: #ffffff;
+    border-bottom-color: #595959;
+  }
+}
+
+.dark {
+  &.ant-select-dropdown {
+    background: #2c2c2c;
+    color: #fff;
+  }
+  .ant-select-dropdown-menu-item,
+  &.ant-select-dropdown--multiple
+    .ant-select-dropdown-menu-item:hover
+    .ant-select-selected-icon {
+    color: #fff;
+  }
+  .ant-select-dropdown-menu-item-selected,
+  .ant-select-dropdown-menu-item:hover:not(
+      .ant-select-dropdown-menu-item-disabled
+    ),
+  .ant-select-dropdown-menu-item-active:not(
+      .ant-select-dropdown-menu-item-disabled
+    ) {
+    background: #595959;
+  }
+}
+
+.rule-design-dialog--dark {
+  .v-dialog {
+    border: 1px solid #595959;
+  }
+}
+
+// ============================ 覆盖组件样式 Start ============================
+.rule-design--dark,
+.rule-design-dialog--dark,
+.ant-select-dropdown--dark,
+.hint-popover--dark,
+.dark {
+  .ant-input,
+  .ant-input-number,
+  .ant-select-selection,
+  .ant-select-selection__clear,
+  .ant-form-item-label > label,
+  .ant-tabs,
+  .ant-input-suffix .anticon,
+  .ant-radio-group .ant-radio-wrapper,
+  // .ant-btn .anticon,
+  .has-error .ant-input-affix-wrapper .ant-input,
+  .has-error .ant-input-affix-wrapper .ant-input:hover,
+  .has-error .ant-input,
+  .has-error .ant-input:hover,
+  .ant-select-dropdown-search,
+  .ant-select-tree,
+  .ant-select-arrow,
+  .expend-icon,
+  .ant-select-dropdown-menu-item,
+  .ant-tree.ant-tree-show-line li span.ant-tree-switcher,
+  .ant-calendar-picker-clear,
+  .ant-calendar-picker-icon,
+  .text-content,
+  .ant-empty-description {
+    color: #ffffff;
+  }
+
+  .ant-input,
+  .ant-input-number,
+  .ant-input-number-handler-wrap,
+  .ant-select-selection,
+  .ant-select-selection__clear,
+  .has-error .ant-input-affix-wrapper .ant-input,
+  .has-error .ant-input-affix-wrapper .ant-input:hover,
+  .has-error .ant-input,
+  .has-error .ant-input:hover,
+  .ant-select-dropdown-search,
+  .ant-calendar-picker-clear,
+  .ant-calendar-picker-icon {
+    background: #2c2c2c;
+  }
+
+  .ant-tree.ant-tree-show-line li span.ant-tree-switcher {
+    background-color: #212121;
+  }
+
+  .ant-input,
+  .ant-input-number,
+  .ant-input-number-handler,
+  .ant-input-number-handler-wrap,
+  .ant-select,
+  .ant-select-selection {
+    border-color: #212121;
+  }
+
+  .ant-tabs-bar {
+    border-bottom-color: #595959;
+  }
+
+  .ant-select-dropdown-search .ant-select-search__field,
+  .ant-input-number-handler {
+    background: #3c3c3c;
+    border-color: #3c3c3c;
+    color: #ffffff;
+  }
+
+  .ant-select-tree li .ant-select-tree-node-content-wrapper {
+    &:hover,
+    &.ant-select-tree-node-selected {
+      background: #414141;
+      span {
+        color: #fff;
+      }
+    }
+  }
+
+  li.ant-select-tree-treenode-disabled
+    > .ant-select-tree-node-content-wrapper
+    span {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .ant-select-tree-title,
+  .ant-empty-small {
+    // color: #afafaf;
+    color: #ffffff;
+  }
+
+  .ant-select-selection__choice {
+    border-color: #595959;
+    background: #595959;
+    color: #fff;
+  }
+
+  .ant-select-dropdown-menu-item-selected {
+    background: #595959;
+    color: #fff;
+  }
+
+  .ant-select-dropdown-menu-item:hover:not(
+      .ant-select-dropdown-menu-item-disabled
+    ) {
+    color: #ffc069;
+  }
+
+  .ant-select,
+  .ant-select-selection {
+    border-color: #212121;
+  }
+
+  .ant-select-dropdown-search,
+  .ant-select-selection {
+    background: #2c2c2c;
+    color: #ffffff;
+  }
+
+  .ant-table-fixed-header
+    .ant-table-scroll
+    .ant-table-header::-webkit-scrollbar {
+    border-color: #595959;
+  }
+
+  .ant-empty-small {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.inline-input-wrapper {
+  background-color: #2c2c2c;
+  border-color: #2c2c2c;
+
+  .inline-input-label {
+    color: #757575;
+  }
+}
+
+.ant-btn-primary,
+.ant-btn-primary:hover,
+.ant-radio-group-solid
+  .ant-radio-button-wrapper-checked:not(
+    .ant-radio-button-wrapper-disabled
+  ):hover,
+.ant-radio-group-solid
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  background-color: #3662ec;
+  border-color: #3662ec;
+}
+
+.ant-radio-button-wrapper:not(.ant-radio-button-wrapper-disabled):hover {
+  color: #3662ec;
+}
+
+.ant-btn-danger,
+.ant-btn-danger:hover {
+  background-color: #d55e43;
+  border-color: #d55e43;
+}
+
+// ============================ 覆盖组件样式 End ============================

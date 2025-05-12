@@ -1,0 +1,10 @@
+**/*.spec.*
+*.html
+dist/
+/stc/assets/*
+/stc/static/*
+/node_modules/
+**/style/
+/components/test/*
+lib/
+_site/

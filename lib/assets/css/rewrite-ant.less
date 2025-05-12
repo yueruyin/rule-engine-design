@@ -1,0 +1,33 @@
+// ========================================================
+// 覆盖ant-design-vue的样式
+// @author wangyb
+// @createTime 2023-05-25 10:44:12
+// ========================================================
+
+.ant-layout,
+.ant-layout-sider,
+.ant-layout-content,
+.ant-layout-header,
+.ant-layout-footer {
+  background-color: transparent;
+}
+
+.ant-layout-header--small {
+  height: 48px;
+  line-height: 28px;
+}
+
+.full {
+  .ant-spin-container {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.ant-spin-container {
+  min-height: inherit;
+}
+
+.confirm-content--without-btns {
+  margin-bottom: -24px;
+}

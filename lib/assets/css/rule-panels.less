@@ -1,0 +1,181 @@
+// ========================================================
+// 功能面板样式
+// @author wangyb
+// @createTime 2023-05-25 09:14:42
+// ========================================================
+
+.rule-design-panel-tabs {
+  overflow: visible;
+
+  .ant-tabs-bar {
+    margin: 0px;
+  }
+
+  .ant-tabs-bottom-content,
+  .ant-tabs-top-content {
+    height: calc(100% - 40px);
+  }
+
+  .ant-tabs-tabpane {
+    height: 100%;
+    overflow: visible;
+  }
+
+  .ant-tabs.ant-tabs-card .ant-tabs-top-bar .ant-tabs-tab {
+    height: 39px;
+  }
+
+  .ant-tabs-card-bar {
+    &.ant-tabs-top-bar,
+    &.ant-tabs-bottom-bar,
+    &.ant-tabs-left-bar,
+    &.ant-tabs-right-bar {
+      .ant-tabs-tab {
+        border: none;
+        border-radius: 0;
+      }
+    }
+
+    &.ant-tabs-bottom-bar {
+      .ant-tabs-tab {
+        border-top: 1px solid #afafaf;
+        padding-top: 2px;
+      }
+    }
+  }
+
+  &.ant-tabs-vertical {
+    &.ant-tabs-card {
+      .ant-tabs-card-bar {
+        &.ant-tabs-left-bar,
+        &.ant-tabs-right-bar {
+          .ant-tabs-tab {
+            border: none;
+          }
+        }
+
+        &.ant-tabs-left-bar {
+          width: 40px;
+          .ant-tabs-tab {
+            border-right: 1px solid #afafaf;
+          }
+        }
+
+        &.ant-tabs-right-bar {
+          width: 40px;
+          .ant-tabs-tab {
+            border-left: 1px solid #afafaf;
+          }
+        }
+      }
+
+      &.ant-tabs-left {
+        .ant-tabs-card-bar {
+          &.ant-tabs-left-bar {
+            .ant-tabs-tab {
+              margin-right: 0px;
+            }
+
+            .ant-tabs-tab-active {
+              margin-right: 0px;
+              padding-right: 16px;
+            }
+          }
+        }
+      }
+
+      &.ant-tabs-right {
+        .ant-tabs-card-bar {
+          &.ant-tabs-right-bar {
+            .ant-tabs-tab {
+              margin-left: 0px;
+              margin-right: 0px;
+            }
+
+            .ant-tabs-tab-active {
+              margin-left: 0px;
+              padding-left: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-tabs-content {
+      height: 100%;
+      padding-left: 0px;
+    }
+  }
+
+  .ant-tabs-content {
+    border: 0px;
+  }
+
+  .ant-tabs-right-content {
+    padding-right: 0px;
+  }
+
+  &.rule-design-panel-tabs--vertical {
+    &.ant-tabs-vertical {
+      &.ant-tabs-card {
+        .ant-tabs-card-bar {
+          &.ant-tabs-left-bar,
+          &.ant-tabs-right-bar {
+            .ant-tabs-tab {
+              height: auto;
+              padding: 5px 0;
+              width: 40px;
+              text-align: center;
+              letter-spacing: 5px;
+              writing-mode: vertical-rl;
+
+              > span {
+                vertical-align: -2px;
+              }
+            }
+
+            .rule-design-panel-tab-icon {
+              color: inherit;
+              margin: 5px 0;
+              vertical-align: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.ant-tabs-small {
+    &.ant-tabs-card {
+      .ant-tabs-card-bar {
+        .ant-tabs-tab {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.rule-design-panel.ant-layout {
+  height: 100%;
+  // 内部自己决定如何去滚动
+  overflow-x: visible;
+  overflow-y: visible;
+
+  > main.rule-design-panel-content {
+    overflow-x: visible;
+    overflow-y: visible;
+  }
+}
+
+.rule-design-panel--left-border {
+  border-left: 1px solid #9f9f9f;
+}
+
+.rule-design-panel--right-border {
+  border-right: 1px solid #9f9f9f;
+}
+
+.rule-design-panel-tab-icon {
+  vertical-align: -2px;
+}
